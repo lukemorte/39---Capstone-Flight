@@ -33,4 +33,5 @@ class DataManager:
                 }
             }
             response = requests.put(url=f"{SHEET_API_URL}/{city['id']}", headers=self.http_header, json=new_data)
-            print(response.text)
+            print(response)
+    
